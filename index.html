@@ -31,8 +31,135 @@
         <div class="hero_content">
             <img class="hero_logo" src="./assets/hero/logo.png" alt="">
             <h1 class="hero_title">PORSCHE 911</h1>
-            <img class="hero_img" src="./assets/hero/side.png" alt="">
+            <img class="hero_img" style="top: 140%;
+            left: 50%;" src="./assets/hero/side.png" alt="">
         </div>
     </section>
+
+    <section class="about">
+        <div class="about_left">
+            <div class="left_bg"></div>
+            <img class="left_img" src="./assets/about/45front.png" alt="">
+        </div>
+        <div class="about_right">
+            <h1 class="left_title">911 Carrera T</h1>
+            <p class="left_content">The “T” in the model designation of the Porsche 911 Carrera T stands 
+                for touring and traces its history back to the homologation of the 911 T 
+                as a touring car in 1968. This first 911 T was offered until 1973, and in 2017 
+                Porsche revived the purist 911 variant with the 911 Carrera T of the 991 
+                model line. Since then, the concept of the stripped-down, yet 
+                exceptionally sporty setup has been successfully brought to other model 
+                lines with the 718 Cayman T, the 718 Boxster T and the Macan T.</p>
+            <h3 class="left_detail_title">DETAILS</h3>
+            <div class="left_detail_content">
+                <div class="detail_content">
+                    <h1>379 hp</h1>
+                    <p>Max. power</p>
+                </div>
+                <div class="detail_content">
+                    <h1>4.0s</h1>
+                    <p>0-60 mph</p>
+                </div>
+                <div class="detail_content">
+                    <h1>180 mph</h1>
+                    <p>Top track speed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <div class="specs_content">
+            <div class="specs_left">
+                <div class="each_specs">
+                    <h1>20 - 21 inch</h1>
+                    <p>Titanium Grey
+                        Carrera S wheels</p>
+                </div>
+                <div class="each_specs">
+                    <h1>2981 cc</h1>
+                    <p>Twin-Turbo <br>
+                        Flat-6 Engine</p>
+                </div>
+                <div class="each_specs">
+                    <h1>Automatic (DCT)</h1>
+                    <p>8 Gears, Paddle Shift, 
+                        Sport Mode transmission</p>
+                </div>
+            </div>
+            <div class="specs_right">
+                <div class="each_specs">
+                    <h1>Aluminium</h1>
+                    <p>Only 1,470 kg weight
+                        body frame</p>
+                </div>
+                <div class="each_specs">
+                    <h1>Hot-formed Steel</h1>
+                    <p>surround passenger
+                        compartment</p>
+                </div>
+                <div class="each_specs">
+                    <h1>7 speed</h1>
+                    <p>Doppelkupplung
+                        (PDK) manual gearbox</p>
+                </div>
+            </div>
+        </div>
+
+
+        <img class="specs_logo" src="./assets/hero/logo.png" alt="">
+
+        <div class="bg1">
+            <div class="circle1"></div>
+            <img class="bg1Img" src="./assets/about/back.png" alt="">
+        </div>
+
+        <div class="bg2">
+            <div class="circle1"></div>
+            <img class="bg2Img" src="./assets/about/front.png" alt="">
+        </div>
+    </section>
+
+    <section class="specs2">
+        <div class="specs_top">
+            <div class="specs2left">
+                <h1>Exclusive details <br>
+                    inside and out</h1>
+                <p>The same goes for the decorative stitching, the 911 logo
+                    embossed in the headrests and the stripes down the seat
+                    centres. The floor mats also offer the logo and stitching in
+                    the contrasting colours of Lizard Green and Slate Grey as
+                    an option.</p>
+            </div>
+            
+            <div class="specs2right">
+                <div class="specs2gallery">
+                    <img class="inner1" src="./assets/service/inner911(1.jpeg" alt="">
+                    <div class="bottomGallery">
+                        <img class="inner2" src="./assets/service/inner911(2.jpeg" alt="">
+                        <img class="inner3" src="./assets/service/inner911(3.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="specs_bg">
+
+        </div>
+    </section>
+
+    <script>
+        let car = document.querySelector('.hero_img');
+        let cur = parseInt(car.style.left);
+
+
+        // height 756 -> 100
+        // scroll
+
+        window.addEventListener('scroll', (e) => {
+            car.style.left = cur + ((window.scrollY/ window.innerHeight)*100) * 0.4 + '%';
+        })
+
+    </script>
 </body>
 </html>
