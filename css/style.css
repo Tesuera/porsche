@@ -145,8 +145,7 @@ body {
 }
 
 .about_right {
-    width: 45%;
-    height: 70%;
+    width: min(700px, 45%);
     padding-right: 8rem;
 }
 
@@ -159,7 +158,7 @@ body {
 }
 
 .left_img {
-    width: 80%;
+    width: min(700px, 80%);
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -283,21 +282,35 @@ body {
 .specs2 {
     width: 100%;
     height: max(600px, 100vh);
-
+    padding-top: 7rem;
 }
 
 .specs_top {
     width: 100%;
+    height: 60%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .specs2left {
-    width: min(400px, 50%);
-    background-color: #444444;
+    width: min(500px, 50%);
+}
+
+.specs2left > h1 {
+    color: #707070;
+    font-size: 50px;
+    line-height: 4rem;
+    margin-bottom: 32px;
+}
+
+.specs2left > p {
+    color: #707070;
 }
 
 .specs2right {
-    width: min(350px, 50%);
+    width: min(450px, 50%);
 }
 
 .specs2gallery {
@@ -306,16 +319,54 @@ body {
 
 .inner1 {
     width: 100%;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .bottomGallery {
     width: 100%;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    gap: 5px;
 }
 
 .inner2, .inner3 {
-    width: 50%;
+    width: 100%;
+}
+
+.specs_bg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.specs_bg_left {
+    width: 440px;
+    margin-left: -140px;
+}
+
+.specs_bg_right {
+    width: 450px;
+    margin-right: -140px;
+}
+
+.specs_bg_middle {
+    width: min(500px, 40%);
+    text-align: center;
+}
+
+.specs_bg_middle > button {
+    padding: 0.4rem 1.3rem;
+    background-color: #707070;
+    color: white;
+}
+
+.bg_line {
+    margin-top: 1.4rem;
+    height: 2px;
+    background-color: #707070;
 }
 /* specs end */
